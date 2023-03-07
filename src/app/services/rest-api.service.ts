@@ -9,7 +9,7 @@ export class RestAPIService {
 
   constructor(private http: HttpClient) { }
 
-  getProjectsData() {
-    return this.http.get(`${environment.apiUrl}/users`);
+  getProjectsAPI() {
+    return this.http.get(`${environment.apiUrl}/api/users`);
   }
 }

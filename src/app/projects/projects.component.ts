@@ -16,7 +16,7 @@ export class ProjectsComponent {
     this.getProjectsData();
   }
   getProjectsData(){
-    this.restAPIService .getProjectsData().subscribe((data: any) => {
+    this.restAPIService .getProjectsAPI().subscribe((data: any) => {
       console.log(data);
     });
     this.http.get('assets/json/projectsData.json').subscribe((response: any) => {
