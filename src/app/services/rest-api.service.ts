@@ -15,4 +15,7 @@ export class RestAPIService {
   getExperienceAPI() {
     return this.http.get(`${environment.apiUrl}/api/exp`);
   }
+  getSkillsAPI() {
+    return this.http.get(`${environment.apiUrl}/api/skills`);
+  }
 }
