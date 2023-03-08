@@ -105,6 +105,7 @@
     color: #383d41;
     margin: 10px auto;
     cursor: pointer;
+    text-decoration: none;
 }
 .register-right{
     background: #f8f9fa;

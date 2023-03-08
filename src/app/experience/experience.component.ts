@@ -9,6 +9,7 @@ import { RestAPIService  } from '../services/rest-api.service';
 })
 export class ExperienceComponent {
   expData: any;
+  expDataapi:any;
 
   constructor(private http: HttpClient, private restAPIService : RestAPIService ) {}
 
@@ -18,10 +19,14 @@ export class ExperienceComponent {
   getProjectsData(){
     this.restAPIService .getProjectsAPI().subscribe((data: any) => {
       console.log(data);
-    });
+      this.expDataapi = data;
+    },
+    (error: any) => {
+      console.error(error);
+    }
+  );
     this.http.get('assets/json/experienceData.json').subscribe((response: any) => {
         this.expData = response;
-        console.log(response);
       },
       (error: any) => {
         console.error(error);
