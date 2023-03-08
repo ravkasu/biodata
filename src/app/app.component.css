@@ -113,6 +113,8 @@
     height: 95vh;
     margin: 10px auto;
     padding: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .register-left img{
     margin-top: 15%;
