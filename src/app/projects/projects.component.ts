@@ -9,16 +9,22 @@ import { RestAPIService  } from '../services/rest-api.service';
 })
 export class ProjectsComponent {
   projectsData: any;
+  projDataapi:any;
 
   constructor(private http: HttpClient, private restAPIService : RestAPIService ) {}
 
   ngOnInit(): void {
-    this.getProjectsData();
+    this.getData();
   }
-  getProjectsData(){
+  getData(){
     this.restAPIService .getProjectsAPI().subscribe((data: any) => {
       console.log(data);
-    });
+      this.projDataapi = data;
+    },
+    (error: any) => {
+      console.error(error);
+    }
+  );
     this.http.get('assets/json/projectsData.json').subscribe((response: any) => {
         this.projectsData = response;
         console.log(response);

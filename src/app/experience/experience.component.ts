@@ -14,10 +14,10 @@ export class ExperienceComponent {
   constructor(private http: HttpClient, private restAPIService : RestAPIService ) {}
 
   ngOnInit(): void {
-    this.getProjectsData();
+    this.getData();
   }
-  getProjectsData(){
-    this.restAPIService .getProjectsAPI().subscribe((data: any) => {
+  getData(){
+    this.restAPIService .getExperienceAPI().subscribe((data: any) => {
       console.log(data);
       this.expDataapi = data;
     },
