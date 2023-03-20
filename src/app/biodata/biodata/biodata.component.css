@@ -1,0 +1,140 @@
+/* .circle {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    top: 0;
+    right: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: move 6s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: calc(100vh - 50px);
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+  .layer1{
+    background: #131e3b;
+    position: fixed;
+    z-index: -1;
+    width:50vw;
+    margin:0;
+    left:0;
+    top:0;
+    bottom:0;
+  }
+  .layer2{
+    background: #cfc3c3;
+    position: fixed;
+    z-index: -1;
+    width:50vw;
+    margin:0;
+    right:0;
+    top:0;
+    bottom:0;
+  }
+  .box {
+    width: auto;
+    height: auto;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .box a {
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    color: #131e3b;
+    text-transform: capitalize;
+    margin-bottom:10px;
+    padding:10px;
+    font-size: 22px;
+    box-shadow: navy;
+  }
+  .box a span{
+    display: inline-flex;
+  }
+  .box-layer1{
+    background: #131e3b;
+    position: absolute;
+    z-index: -1;
+    width:50%;
+    margin:0;
+    right:0;
+    top:0;
+    bottom:0;
+  }
+  .box-layer2{
+    background: #cfc3c3;
+    position: absolute;
+    z-index: -1;
+    width:50%;
+    margin:0;
+    left:0;
+    top:0;
+    bottom:0;
+  } */
+
+  .register{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    height:100vh;
+}
+.register-left{
+    text-align: center;
+    color: #fff;
+    margin-top: 4%;
+}
+.register-left a{
+    border: none;
+    display: block;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin: 10px auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+.register-right{
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    height: 95vh;
+    margin: 10px auto;
+    padding: 5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.register-left img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.register-left p{
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+  
