@@ -11,7 +11,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { PersonalComponent } from './personal/personal.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { BiodataComponent } from './biodata/biodata/biodata.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { BiodataComponent } from './biodata/biodata/biodata.component';
     ExperienceComponent,
     PersonalComponent,
     CertificationsComponent,
-    ProjectsComponent,
-    BiodataComponent
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
